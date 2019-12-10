@@ -43,7 +43,19 @@
                         <td><%= numOfQuestions%></td>
                         <td class="font-weight-bold text-warning"><%= quiz.getTaken_time()%> minutes</td>                       
                         <td>
-                            <a href="takeQuiz.jsp?id=<%= quiz.getId()%>" class="mr-3 btn btn-success">Start Quiz</a>                                             
+                            <%
+                                if (numOfQuestions <= 0) {
+                            %>
+                            <button disabled class="btn btn-success mr-3">Start Quiz</button>
+                            <%
+                            } else {
+                            %>
+                            <a href="takeQuiz.jsp?id=<%= quiz.getId()%>" class="mr-3 btn btn-success">Start Quiz</a>  
+                            <%
+                                }
+                            %>
+
+
                         </td>
                     </tr> 
                     <%

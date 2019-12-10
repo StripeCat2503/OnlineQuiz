@@ -21,6 +21,7 @@
         <div class="container">
             <a href="newQuiz.jsp" class="btn btn-success mt-5 mb-3">Create new Quiz</a>
             <%
+                int count = 1;
                 QuizDAO dao = new QuizDAO();
                 List<Quiz> listOfQuiz = dao.getAllQuiz();
                 if (listOfQuiz != null && !listOfQuiz.isEmpty()) {
@@ -28,7 +29,7 @@
             <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th scope="col">ID</th>
+                        <th scope="col">#</th>
                         <th scope="col">Title</th>
                         <th scope="col">Questions</th>                       
                         <th scope="col">Taken Time</th>                       
@@ -42,7 +43,7 @@
                             int numOfQuestions = dao.getNumOfQuestions(quiz.getId());
                     %>
                     <tr>                
-                        <td><%= quiz.getId()%></td>
+                        <td><%= count++ %></td>
                         <td>
                             <a href="questions?id=<%= quiz.getId()%>"><%= quiz.getTitle()%></a>
                         </td>
