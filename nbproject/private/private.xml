@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/Labs/Lab%20Web%20Projects/OnlineQuiz/src/java/controllers/LoginServlet.java</file>
+            <file>file:/D:/Labs/Lab%20Web%20Projects/OnlineQuiz/web/home.jsp</file>
+            <file>file:/D:/Labs/Lab%20Web%20Projects/OnlineQuiz/web/listOfQuiz.jsp</file>
+            <file>file:/D:/Labs/Lab%20Web%20Projects/OnlineQuiz/src/java/controllers/RegistrationServlet.java</file>
+            <file>file:/D:/Labs/Lab%20Web%20Projects/OnlineQuiz/src/java/controllers/AddQuestionServlet.java</file>
+            <file>file:/D:/Labs/Lab%20Web%20Projects/OnlineQuiz/src/java/quiz/QuizDAO.java</file>
+            <file>file:/D:/Labs/Lab%20Web%20Projects/OnlineQuiz/web/listOfTakingQuiz.jsp</file>
+            <file>file:/D:/Labs/Lab%20Web%20Projects/OnlineQuiz/web/newQuiz.jsp</file>
+            <file>file:/D:/Labs/Lab%20Web%20Projects/OnlineQuiz/src/java/controllers/MakeQuizServlet.java</file>
+            <file>file:/D:/Labs/Lab%20Web%20Projects/OnlineQuiz/src/java/filters/LoginFilter.java</file>
+            <file>file:/D:/Labs/Lab%20Web%20Projects/OnlineQuiz/web/navbar.jsp</file>
+            <file>file:/D:/Labs/Lab%20Web%20Projects/OnlineQuiz/src/java/controllers/StartupSerlvet.java</file>
+            <file>file:/D:/Labs/Lab%20Web%20Projects/OnlineQuiz/web/takeQuiz.jsp</file>
+            <file>file:/D:/Labs/Lab%20Web%20Projects/OnlineQuiz/web/makeQuestion.jsp</file>
+        </group>
+    </open-files>
+</project-private>
