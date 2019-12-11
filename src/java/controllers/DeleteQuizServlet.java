@@ -21,7 +21,7 @@ import quiz.QuizDAO;
  */
 @WebServlet(name = "DeleteQuizServlet", urlPatterns = {"/deleteQuiz"})
 public class DeleteQuizServlet extends HttpServlet {
-    
+
     private final String LIST_QUIZ_PAGE = "listOfQuiz.jsp";
     private final String ERR_PAGE = "removeQuizErr.jsp";
 
@@ -37,31 +37,25 @@ public class DeleteQuizServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        
+
         String txtQuizID = request.getParameter("id");
-        
+
         String url = "";
-        
-        try{
+
+        try {
             // Remove all questions belong to removing quiz first
             QuestionDAO questionDAO = new QuestionDAO();
             boolean removeQuestionSuccess = questionDAO.deleteAllQuestions(Integer.parseInt(txtQuizID));
-            if(removeQuestionSuccess){
-                // If all questions have been removed, then go to delete the quiz
-                QuizDAO quizDAO = new QuizDAO();
-                boolean removeQuizSuccess = quizDAO.deleteQuiz(Integer.parseInt(txtQuizID));
-                if(removeQuizSuccess){
-                    url = LIST_QUIZ_PAGE;
-                }
-                else{
-                    url = ERR_PAGE;
-                }
-            }
-            else{
+
+            QuizDAO quizDAO = new QuizDAO();
+            boolean removeQuizSuccess = quizDAO.deleteQuiz(Integer.parseInt(txtQuizID));
+            if (removeQuizSuccess) {
+                url = LIST_QUIZ_PAGE;
+            } else {
                 url = ERR_PAGE;
             }
-        }
-        finally{
+
+        } finally {
             response.sendRedirect(url);
         }
     }

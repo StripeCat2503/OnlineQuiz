@@ -5,6 +5,7 @@
     <class>user.User</class>
     <class>quiz.Quiz</class>
     <class>question.Question</class>
+    <class>history.QuizHistory</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost:1433;databaseName=OnlineQuizDB"/>
